@@ -22,7 +22,6 @@ export async function handleStartCommand(message: any) {
   const firstName = message.from?.first_name || "User";
 
   // React with emoji
-  await setMessageReaction(chatId, message.message_id, "👍");
 
   // Send welcome message with bold formatting
   const welcomeText = `<b>Hello ${firstName} 👋✨</b>
