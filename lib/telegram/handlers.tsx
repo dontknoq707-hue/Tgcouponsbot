@@ -48,7 +48,7 @@ export async function handleStartCommand(message: Message) {
   const firstName = message.from?.first_name || "there";
 
   // React to message
-  await setMessageReaction(chatId, message.message_id, "👍");
+  
 
   // Get bot config
   const config = await getBotConfig();
